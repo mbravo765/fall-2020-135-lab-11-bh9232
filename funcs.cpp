@@ -1,6 +1,6 @@
 #include <iostream>
 #include "profile.h"
-
+#include "network.h"
 
 Profile::Profile(std::string usrn, std::string dspn){
 	username = usrn;
