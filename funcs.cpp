@@ -40,7 +40,7 @@ int Network::findID(std::string usrn){
 		if(profiles[i].getUsername() == usrn){
 			return i;
 		}
-	}
+	} 
 	return -1;
 }
 

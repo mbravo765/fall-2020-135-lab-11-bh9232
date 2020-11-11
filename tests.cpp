@@ -35,4 +35,4 @@ TEST_CASE("TASK B and C"){
 	CHECK(nw.follow("thelegend27","brian123") == true);
 	CHECK(nw.follow("brian_123","brian123") == false);
 	CHECK(nw.follow("thelegend27", "brian_123") == false);
-}
+} 

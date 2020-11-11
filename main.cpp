@@ -51,6 +51,6 @@ int main(){
     nw.follow("mario2", "luigi");
 
     nw.printDot();
-    
+     
 	return 0;
 }
