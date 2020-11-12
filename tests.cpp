@@ -7,7 +7,7 @@
 
 TEST_CASE("TASK A"){
 
-	Profile p0 = Profile();
+	Profile p0;
 	CHECK(p0.getUsername() == "");
 	CHECK(p0.getFullName() == " (@)");
 	p0.setDisplayName("Zyselia");
