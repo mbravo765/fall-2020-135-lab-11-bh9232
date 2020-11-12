@@ -8,10 +8,10 @@ int main(){
 	
 	//Task A
 	Profile p1 = Profile("Brian","Brain");
-	std::cout << p1.Profile::getUsername() << "\n";
-	std::cout << p1.Profile::getFullName() << "\n";
-	p1.Profile::setDisplayName("Zyselia");
-	std::cout << p1.Profile::getFullName() << "\n";
+	std::cout << p1.getUsername() << "\n";
+	std::cout << p1.getFullName() << "\n";
+	p1.setDisplayName("Zyselia");
+	std::cout << p1.getFullName() << "\n";
 
 	//Task B
 	Network nw;

@@ -7,11 +7,17 @@
 
 TEST_CASE("TASK A"){
 
+	Profile p0 = Profile();
+	CHECK(p0.getUsername() == "");
+	CHECK(p0.getFullName() == " (@)");
+	p0.setDisplayName("Zyselia");
+	CHECK(p0.getFullName() == "Zyselia (@)");
+
 	Profile p1("Zyselia","Brian");
-	CHECK(p1.Profile::getUsername() == "Zyselia");
-	CHECK(p1.Profile::getFullName() == "Brian (@Zyselia)");
-	p1.Profile::setDisplayName("Zyselia");
-	CHECK(p1.Profile::getFullName() == "Zyselia (@Zyselia)");
+	CHECK(p1.getUsername() == "Zyselia");
+	CHECK(p1.getFullName() == "Brian (@Zyselia)");
+	p1.setDisplayName("Zyselia");
+	CHECK(p1.getFullName() == "Zyselia (@Zyselia)");
 
 	Profile p2("brian123","brian");
 	CHECK(p2.getUsername() == "brian123");

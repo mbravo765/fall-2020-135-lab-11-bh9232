@@ -10,4 +10,4 @@ network.o: network.cpp profile.h network.h
 	g++ --std=c++11 -c network.cpp
 
 clean:
-	rm -f main.o tests.o profile.o network.o
+	rm -f main tests main.o tests.o profile.o network.o
