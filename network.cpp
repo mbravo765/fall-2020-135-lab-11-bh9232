@@ -2,30 +2,7 @@
 #include "profile.h"
 #include "network.h"
 
-//Profile Class
-Profile::Profile(std::string usrn, std::string dspn){
-	username = usrn;
-	displayname = dspn;
-}
-    
-Profile::Profile(){
-	username = "";
-	displayname = "";
-}
-    
-std::string Profile::getUsername(){
-	return username;
-}
-std::string Profile::getFullName(){
-	return displayname + " (@" + username + ")";
-}
-void Profile::setDisplayName(std::string dspn){
-	displayname = dspn;
-}
 
-
-
-//Network Class
 Network::Network(){
 	numUsers = 0;
 	for(int i = 0; i < MAX_USERS; i++){
